@@ -5,7 +5,7 @@
   background: $dark;
   color: $tone;
   position: fixed;
-  width: 768pt;
+  width: $width;
   padding: 0 calc((100% - 768pt) / 2);
   >div,
   ul {

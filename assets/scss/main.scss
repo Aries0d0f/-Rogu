@@ -1,8 +1,10 @@
 @import 'reset';
 @import 'font';
+@import 'util';
 @import 'color';
 
 @import 'menu';
+@import 'footer';
 
 #app {
   display: flex;
@@ -11,6 +13,12 @@
   width: 100%;
   flex-direction: column;
   background-color: $paper;
+}
+
+.main {
+  width: 768pt;
+  padding: 0 calc((100% - #{$width}) / 2);
+  min-height: 100vh;
 }
 
 .nuxt-progress {
