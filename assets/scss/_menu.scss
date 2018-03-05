@@ -1,0 +1,45 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  height: 48pt;
+  background: $dark;
+  color: $tone;
+  position: fixed;
+  width: 100%;
+  >div, ul {
+    padding: 1rem;
+    align-items: center;
+  }
+  .logo {
+    font-size: 20pt;
+    font-weight: 100;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10pt;
+    margin-right: auto;   
+    position: relative; 
+    img {
+      width: 30pt;
+    }
+    span {
+      padding: 0 10pt;
+    }
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    li {
+      list-style: none;
+      padding: 0 10pt;
+      a {
+        font-size: 14pt;
+      }
+    }
+  }
+}

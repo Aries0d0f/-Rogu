@@ -1,8 +1,6 @@
 <template>
   <div class="menu">
-    <div class="logo">
-      <router-link to="/"><span>{{ $nuxt.$options.head.title }}</span></router-link>
-    </div>
+    <router-link to="/" class="logo"><img src="~assets/images/logo.png" alt=""><span>{{ $nuxt.$options.head.title }}</span></router-link>
     <ul class="nav">
       <li><router-link to="/post">文章列表</router-link></li>
       <li><router-link to="/category">文章分類</router-link></li>
