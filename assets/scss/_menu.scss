@@ -7,6 +7,7 @@
   position: fixed;
   width: $width;
   padding: 0 calc((100% - 768pt) / 2);
+  z-index: 100;
   >div,
   ul {
     align-items: center;
