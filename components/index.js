@@ -1,7 +1,7 @@
-import Footer       from './Footer.vue'
+import mainFooter       from './mainFooter.vue'
 import Menu         from './Menu.vue'
 
 export default {
-  Footer,
+  mainFooter,
   Menu
 }

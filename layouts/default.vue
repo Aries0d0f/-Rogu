@@ -2,7 +2,7 @@
   <div id="app">
     <Menu/>
     <nuxt/>
-    <Footer/>
+    <mainFooter/>
   </div>
 </template>
 
