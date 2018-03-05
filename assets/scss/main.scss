@@ -30,3 +30,8 @@
   height: 3pt !important;
   pointer-events: none;
 }
+
+*::selection {
+  color: $white;
+  background-color: $tone;
+}
