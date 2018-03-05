@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Menu/>
-    <nuxt/>
+    <nuxt class="main" />
     <mainFooter/>
   </div>
 </template>
