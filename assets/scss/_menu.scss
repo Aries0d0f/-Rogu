@@ -5,9 +5,10 @@
   background: $dark;
   color: $tone;
   position: fixed;
-  width: 100%;
-  >div, ul {
-    padding: 1rem;
+  width: 768pt;
+  padding: 0 calc((100% - 768pt) / 2);
+  >div,
+  ul {
     align-items: center;
   }
   .logo {
@@ -17,8 +18,7 @@
     flex-direction: row;
     align-items: center;
     padding: 0 10pt;
-    margin-right: auto;   
-    position: relative; 
+    position: relative;
     img {
       width: 30pt;
     }
@@ -36,10 +36,20 @@
     flex-direction: row;
     li {
       list-style: none;
-      padding: 0 10pt;
+      position: relative;
+      height: 100%;
+      >* {
+        height: 100%;
+        padding: 0 10pt;
+        display: flex;
+        align-items: center;
+      }
       a {
         font-size: 14pt;
       }
     }
+  }
+  .toolbox {
+    margin-left: auto;
   }
 }

@@ -6,7 +6,7 @@
       <li><router-link to="/category">Category</router-link></li>
     </ul>
     <ul class="toolbox">
-      <li><font-awesome-icon :icon="['fas', 'search']" /></li>
+      <li><span><font-awesome-icon :icon="['fas', 'search']" /></span></li>
     </ul>
   </div>
 </template>
