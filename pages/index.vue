@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 export default {
   data () {
     return {
@@ -20,6 +21,9 @@ export default {
         subtitle: 'A lightweight blog integration system based on Node.js'
       }
     }
+  },
+  computed: {
+    ...mapGetters({ post: 'allPost' })
   }
 }
 </script>
