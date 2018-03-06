@@ -30,6 +30,8 @@
     "koa-json": "^2.0.2",
     "koa-router": "^7.4.0",
     "koa-static": "^4.0.2",
+    "mongoose": "^5.0.9",
+    "mongoose-unique-validator": "^2.0.0",
     "node-sass": "^4.7.2",
     "qonfucius-nuxt-fontawesome": "^0.0.1",
     "sass-loader": "^6.0.7"
