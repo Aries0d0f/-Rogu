@@ -25,6 +25,11 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
+    "koa": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
     "node-sass": "^4.7.2",
     "qonfucius-nuxt-fontawesome": "^0.0.1",
     "sass-loader": "^6.0.7"
