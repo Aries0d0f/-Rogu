@@ -1,0 +1,7 @@
+{
+  "apps": [{
+    "name": "μRogu",
+    "script": "./server/index.js",
+    "watch": true
+  }]
+}
