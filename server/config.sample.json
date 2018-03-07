@@ -1,0 +1,6 @@
+{
+  "port": 4000,
+  "db": {
+    "uri": "mongodb://your_mongodb_uri_here"
+  }
+}
