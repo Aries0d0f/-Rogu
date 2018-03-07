@@ -19,6 +19,11 @@ const actions = {
     res.data.data.sort((a, b) => { return new Date(a.date).getTime() - new Date(b.date).getTime() }).reverse()
     commit('GET_ALL_POST', res.data.data)
     return res.data.data
+  },
+
+  async getPostByID ({ commit }, pid) {
+    let res = await axios.get(`/api/post/${pid}`)
+    return res.data.data
   }
 }
 
