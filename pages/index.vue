@@ -7,6 +7,13 @@
       </div>
     </div>
     <section class="container">
+      <div class="card-container" v-for="(post, index) in post" :key="index">
+        <div class="image" v-if="post.meta" :class="{ 'background-image': `url(${post.meta.image})` }"></div>
+        <span class="date">{{ new Date(post.date).toLocaleDateString() }}</span>
+        <h1 class="title">{{ post.title }}</h1>
+        <p class="author" v-if="post.meta">{{ post.meta.author }}</p>
+        <p class="content">{{ `${post.content.substring(0, 30)}...` }}</p>
+      </div>
     </section>
   </div>
 </template>
