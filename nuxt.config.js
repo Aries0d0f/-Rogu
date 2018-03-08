@@ -37,6 +37,21 @@ module.exports = {
       src: '~/plugins/font-awesome'
     }
   ],
+  /*
+   ** Modules 
+   */
+  modules: [
+    '@nuxtjs/proxy'
+  ],
+  /*
+   ** Add api proxy 
+   */
+  proxy: {
+    '/api/*': {
+      target: 'http://localhost:4000',
+      changeOrigin: true
+    }
+  },
   build: {
     /*
      ** Run ESLint on save
