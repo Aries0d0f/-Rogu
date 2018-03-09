@@ -1,0 +1,69 @@
+.card-container {
+  margin: 0 10pt;
+  padding: 10pt 0;
+  border-bottom: 1pt solid $dark;
+  display: grid;
+  grid-template-areas: "content image";
+  grid-template-columns: 1fr 25rem;
+  grid-column-gap: 10pt;
+  height: 180pt;
+  .image {
+    grid-area: image;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  .content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    .date {
+      font-size: 12pt;
+      color: $subtitle;
+    }
+    h1 {
+      font-size: 28pt;
+      line-height: 1.2;
+      color: $title;
+    }
+    .author {
+      font-size: 10pt;
+      color: $tone;
+      span {
+        margin-left: 5pt;
+        font-size: 120%;
+      }
+    }
+    p {
+      font-size: 14pt;
+      line-height: 1.4;
+      color: $content;
+    }
+    .button {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.button {
+  padding: 4pt 10pt;
+  font-size: 14pt;
+  text-decoration: none;
+  color: $black;
+  box-sizing: border-box;
+  transition: ease all .3s;
+  border: 1px solid $black;
+  margin: 10pt 0;
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  &:hover {
+    border-color: transparent;
+    background-color: $black;
+    color: $white;
+  }
+}

@@ -8,11 +8,14 @@
     </div>
     <section class="container">
       <div class="card-container" v-for="(post, index) in post" :key="index">
-        <div class="image" v-if="post.meta" :class="{ 'background-image': `url(${post.meta.image})` }"></div>
-        <span class="date">{{ new Date(post.date).toLocaleDateString() }}</span>
-        <h1 class="title">{{ post.title }}</h1>
-        <p class="author" v-if="post.meta">{{ post.meta.author }}</p>
-        <p class="content">{{ `${post.content.substring(0, 30)}...` }}</p>
+        <div class="content">
+          <span class="date">{{ new Date(post.date).toLocaleDateString() }}</span>
+          <h1 class="title">{{ post.title }}</h1>
+          <p class="author" v-if="post.meta"><font-awesome-icon :icon="['fas', 'user']" /><span>{{ post.meta.author }}</span></p>
+          <p>{{ `${post.content.substring(0, 500)}...` }}</p>
+          <router-link :to="`/post/${post._id}`" class="button"><span>Read More</span><font-awesome-icon :icon="['fas', 'angle-right']" /></router-link>
+        </div>
+        <div class="image" v-if="post.meta" :style="{ 'background-image': `url(${post.meta.image})` }"></div>        
       </div>
     </section>
   </div>
