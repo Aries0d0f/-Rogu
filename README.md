@@ -1,4 +1,4 @@
-# urogu
+# μRogu
 
 > Nuxt.js project
 
