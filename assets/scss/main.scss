@@ -2,10 +2,16 @@
 @import 'font';
 @import 'util';
 @import 'color';
+@import 'plugin';
 
 @import 'menu';
 @import 'footer';
 @import 'banner';
+@import 'page';
+
+body {
+  background-color: $dark;
+}
 
 #app {
   display: flex;
@@ -20,6 +26,7 @@
   min-height: 100vh;
   width: 100%;
   .container {
+    margin: 10pt 0;
     width: 768pt;
     padding: 0 calc((100% - #{$width}) / 2);
   }
